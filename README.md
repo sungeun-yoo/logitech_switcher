@@ -4,6 +4,7 @@ Simultaneously switch the input of Logitech mouse and keyboard
 
 ## Pre requirements
 https://www.nirsoft.net/utils/control_my_monitor.html
+https://github.com/todbot/hidapitester
 
 ## windows to linux ( channel 1 --> 2)
 ### MX keys
