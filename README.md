@@ -4,6 +4,7 @@ Simultaneously switch the input of Logitech mouse and keyboard
 
 ## Pre requirements
 https://www.nirsoft.net/utils/control_my_monitor.html
+
 https://github.com/todbot/hidapitester
 
 ## windows to linux ( channel 1 --> 2)
@@ -13,6 +14,10 @@ https://github.com/todbot/hidapitester
 ### m720
 ```.\hidapitester.exe --vidpid 046D:C52B --usage 0x0001 --usagePage 0xFF00 --open --length 7 --send-output 0x10,0x02,0x09,0x1e,0x01,0x00,0x00```
 
+```
+--send-output 0x10,0x01,0x09,0x1e,0x01,0x00,0x00  에서 아래로 수정함. 동글에 잡혀있는 디바이스 ID 가 바뀌면 바꿔줘야 하는걸로 판단됨
+--send-output 0x10,0x02,0x09,0x1e,0x01,0x00,0x00 
+```
 
 ## Linux to windows (channel 2 --> 1)
 ### MX Keys
